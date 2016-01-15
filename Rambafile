@@ -1,0 +1,37 @@
+### Headers settings
+company: SergeyC
+
+### Xcode project settings
+project_name: TestViper
+xcodeproj_path: TestViper.xcodeproj
+
+
+### Code generation settings section
+# The main project target name
+project_target: TestViper
+
+# The file path for new modules
+project_file_path: Viper
+
+# The Xcode group path to new modules
+project_group_path: Viper
+
+### Tests generation settings section
+# The tests target name
+test_target: TestViper
+
+# The file path for new tests
+test_file_path: ViperTests
+
+# The Xcode group path to new tests
+test_group_path: ViperTests
+
+### Dependencies settings section
+podfile_path: Podfile
+
+
+### Templates
+catalogs:
+- 'https://github.com/BrainLayer/GenerambaTemplates'
+templates:
+- {name: bl_viper_default_gt}

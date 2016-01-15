@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D35F8F7966050152C392DCA /* MainTextInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */; };
+		0F98797662637A97B9A661EE /* MainTextRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E02C2686642500FB06FD23 /* MainTextRouter.m */; };
+		3967B10C0118661A3400C99B /* ChooseInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 607E1824235B9E6B94FB3561 /* ChooseInteractor.m */; };
+		3FBCC1A6F87F4C8C8B1FA17F /* MainTextAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */; };
+		42465D447E880C8DA04BE042 /* ChooseRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 915713A5A6E297621764386E /* ChooseRouter.m */; };
+		4C3BB9DF24282A7B2B32F4E3 /* ChooseAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D03D5FA3551BF4BF302941A /* ChooseAssembly.m */; };
+		5F2C34D06B151BD9F222A9BA /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01F7AE24BF2283BF059688 /* ChooseViewController.m */; };
+		611B9D2911B7BE80A7576C64 /* libPods-TestViper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13615BB9E2246A7AADB14D75 /* libPods-TestViper.a */; };
+		A3D2F1C0A9314274A28636D6 /* ChoosePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF014E22905C617380B55D3 /* ChoosePresenter.m */; };
+		B0CAB1C53D93E55682DDB2AD /* MainTextPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED759E95C077196E57AD374 /* MainTextPresenter.m */; };
+		D93097090EC419E63EC7C4BB /* MainTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A428065D3CECDF121C456A01 /* MainTextViewController.m */; };
+		FC8F156D1C496C77003D7225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156C1C496C77003D7225 /* main.m */; };
+		FC8F15701C496C77003D7225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156F1C496C77003D7225 /* AppDelegate.m */; };
+		FC8F15761C496C77003D7225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15741C496C77003D7225 /* Main.storyboard */; };
+		FC8F15781C496C77003D7225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15771C496C77003D7225 /* Assets.xcassets */; };
+		FC8F157B1C496C77003D7225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15791C496C77003D7225 /* LaunchScreen.storyboard */; };
+		FC8F15891C498CC5003D7225 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F15881C498CC5003D7225 /* News.m */; };
+		FC8F158D1C498D2F003D7225 /* Mapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F158C1C498D2F003D7225 /* Mapper.m */; };
+		FC8F15901C49A91D003D7225 /* SOTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F158F1C49A91D003D7225 /* SOTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0044B69E34181737BB6184F4 /* Pods-TestViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestViper/Pods-TestViper.debug.xcconfig"; sourceTree = "<group>"; };
+		01029516D95C6C1B7EAD899B /* Pods-TestViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestViper/Pods-TestViper.release.xcconfig"; sourceTree = "<group>"; };
+		0EFA23CF67F321D7EB32F05A /* MainTextAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextAssembly.h; sourceTree = "<group>"; };
+		13615BB9E2246A7AADB14D75 /* libPods-TestViper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestViper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		288A14BD7A831C386F23E55C /* ChooseInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractorOutput.h; sourceTree = "<group>"; };
+		2ED759E95C077196E57AD374 /* MainTextPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextPresenter.m; sourceTree = "<group>"; };
+		2FDD7B5A46EFE3C329582D1B /* ChooseInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractor.h; sourceTree = "<group>"; };
+		3B4D11E5F939BE1C5AD103BA /* MainTextPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextPresenter.h; sourceTree = "<group>"; };
+		3F4CCC4DEDB81C2F1C95D17E /* MainTextRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextRouter.h; sourceTree = "<group>"; };
+		43F5C53462DBE2F24718A55C /* ChooseRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseRouter.h; sourceTree = "<group>"; };
+		4561D80C0E15DD477E996818 /* ChooseModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseModuleInput.h; sourceTree = "<group>"; };
+		4DC7B354A26C999936AB604F /* MainTextInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractorInput.h; sourceTree = "<group>"; };
+		599810EE9098289A672AED22 /* ChoosePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChoosePresenter.h; sourceTree = "<group>"; };
+		607E1824235B9E6B94FB3561 /* ChooseInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseInteractor.m; sourceTree = "<group>"; };
+		6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextAssembly.m; sourceTree = "<group>"; };
+		7D03D5FA3551BF4BF302941A /* ChooseAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseAssembly.m; sourceTree = "<group>"; };
+		7FF014E22905C617380B55D3 /* ChoosePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChoosePresenter.m; sourceTree = "<group>"; };
+		80884450AAC11A66DE8E740B /* ChooseViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewOutput.h; sourceTree = "<group>"; };
+		824D6ADA31D78880F10A9658 /* MainTextRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextRouterInput.h; sourceTree = "<group>"; };
+		87B7013455B4DBC12EF0033E /* ChooseAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseAssembly.h; sourceTree = "<group>"; };
+		915713A5A6E297621764386E /* ChooseRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseRouter.m; sourceTree = "<group>"; };
+		92E02C2686642500FB06FD23 /* MainTextRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextRouter.m; sourceTree = "<group>"; };
+		938562ECD2495904FCF50241 /* ChooseViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewInput.h; sourceTree = "<group>"; };
+		9F01F7AE24BF2283BF059688 /* ChooseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseViewController.m; sourceTree = "<group>"; };
+		A428065D3CECDF121C456A01 /* MainTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextViewController.m; sourceTree = "<group>"; };
+		AA4849459AD98A4923835435 /* MainTextModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextModuleInput.h; sourceTree = "<group>"; };
+		B0E2CBB79A6CBA6E0E7123B8 /* ChooseInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractorInput.h; sourceTree = "<group>"; };
+		B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextInteractor.m; sourceTree = "<group>"; };
+		DCA7BD868164AB9842BEA36F /* ChooseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewController.h; sourceTree = "<group>"; };
+		E4CBD4DFA3214EF7B7F38417 /* MainTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewController.h; sourceTree = "<group>"; };
+		E6165BB5835FBC703A34D5E8 /* MainTextInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractorOutput.h; sourceTree = "<group>"; };
+		E871005E391D5EEEC21E267D /* MainTextViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewOutput.h; sourceTree = "<group>"; };
+		EA00661A194020E7F0A86504 /* MainTextInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractor.h; sourceTree = "<group>"; };
+		ECAEACCB585A90EAE4F97FF3 /* MainTextViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewInput.h; sourceTree = "<group>"; };
+		F433B24ED0B20C982429C334 /* ChooseRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseRouterInput.h; sourceTree = "<group>"; };
+		FC8F15681C496C77003D7225 /* TestViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8F156C1C496C77003D7225 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC8F156E1C496C77003D7225 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC8F156F1C496C77003D7225 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC8F15751C496C77003D7225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC8F15771C496C77003D7225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC8F157A1C496C77003D7225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC8F157C1C496C77003D7225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8F15861C4974E7003D7225 /* TableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewProtocol.h; sourceTree = "<group>"; };
+		FC8F15871C498CC5003D7225 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Model/News.h; sourceTree = "<group>"; };
+		FC8F15881C498CC5003D7225 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Model/News.m; sourceTree = "<group>"; };
+		FC8F158B1C498D2F003D7225 /* Mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mapper.h; path = Model/Mapper.h; sourceTree = "<group>"; };
+		FC8F158C1C498D2F003D7225 /* Mapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mapper.m; path = Model/Mapper.m; sourceTree = "<group>"; };
+		FC8F158E1C49A91D003D7225 /* SOTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOTextView.h; path = TextView/SOTextView.h; sourceTree = "<group>"; };
+		FC8F158F1C49A91D003D7225 /* SOTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOTextView.m; path = TextView/SOTextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC8F15651C496C77003D7225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611B9D2911B7BE80A7576C64 /* libPods-TestViper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FC35257A4A2FBEF070F822 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA4849459AD98A4923835435 /* MainTextModuleInput.h */,
+				3B4D11E5F939BE1C5AD103BA /* MainTextPresenter.h */,
+				2ED759E95C077196E57AD374 /* MainTextPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		023519A57A557CCF1F0A239C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7B354A26C999936AB604F /* MainTextInteractorInput.h */,
+				E6165BB5835FBC703A34D5E8 /* MainTextInteractorOutput.h */,
+				EA00661A194020E7F0A86504 /* MainTextInteractor.h */,
+				B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		16DBCD1A461742F0BE11E4E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F15911C49A923003D7225 /* TextView */,
+				ECAEACCB585A90EAE4F97FF3 /* MainTextViewInput.h */,
+				E871005E391D5EEEC21E267D /* MainTextViewOutput.h */,
+				E4CBD4DFA3214EF7B7F38417 /* MainTextViewController.h */,
+				A428065D3CECDF121C456A01 /* MainTextViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21AD34A544A4B076B2F323AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0044B69E34181737BB6184F4 /* Pods-TestViper.debug.xcconfig */,
+				01029516D95C6C1B7EAD899B /* Pods-TestViper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39262110E49232D093A6ECAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				938562ECD2495904FCF50241 /* ChooseViewInput.h */,
+				80884450AAC11A66DE8E740B /* ChooseViewOutput.h */,
+				DCA7BD868164AB9842BEA36F /* ChooseViewController.h */,
+				9F01F7AE24BF2283BF059688 /* ChooseViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40DE31B358AB19E891AEB7EC /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				D19F922EC14941E9AF4684B8 /* Choose */,
+				6339FBD719EAC796C0E80FEE /* MainText */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		4458E8552D7B54AE41DF1C6C /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				87B7013455B4DBC12EF0033E /* ChooseAssembly.h */,
+				7D03D5FA3551BF4BF302941A /* ChooseAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		6339FBD719EAC796C0E80FEE /* MainText */ = {
+			isa = PBXGroup;
+			children = (
+				D0991090D905B5C59D01F8D3 /* Assembly */,
+				16DBCD1A461742F0BE11E4E3 /* View */,
+				00FC35257A4A2FBEF070F822 /* Presenter */,
+				023519A57A557CCF1F0A239C /* Interactor */,
+				73769C78794F39DB04E88F5D /* Router */,
+			);
+			path = MainText;
+			sourceTree = "<group>";
+		};
+		73769C78794F39DB04E88F5D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				824D6ADA31D78880F10A9658 /* MainTextRouterInput.h */,
+				3F4CCC4DEDB81C2F1C95D17E /* MainTextRouter.h */,
+				92E02C2686642500FB06FD23 /* MainTextRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		87ACABF9BCEA85F76EB16DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13615BB9E2246A7AADB14D75 /* libPods-TestViper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A821E672D80E67E3623311F7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B0E2CBB79A6CBA6E0E7123B8 /* ChooseInteractorInput.h */,
+				288A14BD7A831C386F23E55C /* ChooseInteractorOutput.h */,
+				2FDD7B5A46EFE3C329582D1B /* ChooseInteractor.h */,
+				607E1824235B9E6B94FB3561 /* ChooseInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C1F8DB930B52D341977D457A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F433B24ED0B20C982429C334 /* ChooseRouterInput.h */,
+				43F5C53462DBE2F24718A55C /* ChooseRouter.h */,
+				915713A5A6E297621764386E /* ChooseRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0991090D905B5C59D01F8D3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0EFA23CF67F321D7EB32F05A /* MainTextAssembly.h */,
+				6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		D19F922EC14941E9AF4684B8 /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				4458E8552D7B54AE41DF1C6C /* Assembly */,
+				39262110E49232D093A6ECAC /* View */,
+				F7100FFEC0579F68B8F34983 /* Presenter */,
+				A821E672D80E67E3623311F7 /* Interactor */,
+				C1F8DB930B52D341977D457A /* Router */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
+		F7100FFEC0579F68B8F34983 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4561D80C0E15DD477E996818 /* ChooseModuleInput.h */,
+				599810EE9098289A672AED22 /* ChoosePresenter.h */,
+				7FF014E22905C617380B55D3 /* ChoosePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC8F155F1C496C77003D7225 = {
+			isa = PBXGroup;
+			children = (
+				FC8F156A1C496C77003D7225 /* TestViper */,
+				FC8F15691C496C77003D7225 /* Products */,
+				21AD34A544A4B076B2F323AF /* Pods */,
+				87ACABF9BCEA85F76EB16DD8 /* Frameworks */,
+				40DE31B358AB19E891AEB7EC /* Viper */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8F15691C496C77003D7225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F15681C496C77003D7225 /* TestViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC8F156A1C496C77003D7225 /* TestViper */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F156E1C496C77003D7225 /* AppDelegate.h */,
+				FC8F156F1C496C77003D7225 /* AppDelegate.m */,
+				FC8F15741C496C77003D7225 /* Main.storyboard */,
+				FC8F15771C496C77003D7225 /* Assets.xcassets */,
+				FC8F15791C496C77003D7225 /* LaunchScreen.storyboard */,
+				FC8F157C1C496C77003D7225 /* Info.plist */,
+				FC8F156B1C496C77003D7225 /* Supporting Files */,
+				FC8F15861C4974E7003D7225 /* TableViewProtocol.h */,
+				FC8F158A1C498CCA003D7225 /* Model */,
+			);
+			path = TestViper;
+			sourceTree = "<group>";
+		};
+		FC8F156B1C496C77003D7225 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F156C1C496C77003D7225 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC8F158A1C498CCA003D7225 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F15871C498CC5003D7225 /* News.h */,
+				FC8F15881C498CC5003D7225 /* News.m */,
+				FC8F158B1C498D2F003D7225 /* Mapper.h */,
+				FC8F158C1C498D2F003D7225 /* Mapper.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC8F15911C49A923003D7225 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F158E1C49A91D003D7225 /* SOTextView.h */,
+				FC8F158F1C49A91D003D7225 /* SOTextView.m */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC8F15671C496C77003D7225 /* TestViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8F157F1C496C77003D7225 /* Build configuration list for PBXNativeTarget "TestViper" */;
+			buildPhases = (
+				6FB851B2ED3795F09563368A /* Check Pods Manifest.lock */,
+				FC8F15641C496C77003D7225 /* Sources */,
+				FC8F15651C496C77003D7225 /* Frameworks */,
+				FC8F15661C496C77003D7225 /* Resources */,
+				C3852CC79968E0618F833EBB /* Embed Pods Frameworks */,
+				3104B97FDA2599216A302A56 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestViper;
+			productName = TestViper;
+			productReference = FC8F15681C496C77003D7225 /* TestViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8F15601C496C77003D7225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sergey Oleynich";
+				TargetAttributes = {
+					FC8F15671C496C77003D7225 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FC8F15631C496C77003D7225 /* Build configuration list for PBXProject "TestViper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC8F155F1C496C77003D7225;
+			productRefGroup = FC8F15691C496C77003D7225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC8F15671C496C77003D7225 /* TestViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC8F15661C496C77003D7225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8F157B1C496C77003D7225 /* LaunchScreen.storyboard in Resources */,
+				FC8F15781C496C77003D7225 /* Assets.xcassets in Resources */,
+				FC8F15761C496C77003D7225 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3104B97FDA2599216A302A56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestViper/Pods-TestViper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB851B2ED3795F09563368A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3852CC79968E0618F833EBB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestViper/Pods-TestViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8F15641C496C77003D7225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8F15701C496C77003D7225 /* AppDelegate.m in Sources */,
+				FC8F156D1C496C77003D7225 /* main.m in Sources */,
+				4C3BB9DF24282A7B2B32F4E3 /* ChooseAssembly.m in Sources */,
+				5F2C34D06B151BD9F222A9BA /* ChooseViewController.m in Sources */,
+				A3D2F1C0A9314274A28636D6 /* ChoosePresenter.m in Sources */,
+				3967B10C0118661A3400C99B /* ChooseInteractor.m in Sources */,
+				FC8F15901C49A91D003D7225 /* SOTextView.m in Sources */,
+				FC8F15891C498CC5003D7225 /* News.m in Sources */,
+				FC8F158D1C498D2F003D7225 /* Mapper.m in Sources */,
+				42465D447E880C8DA04BE042 /* ChooseRouter.m in Sources */,
+				3FBCC1A6F87F4C8C8B1FA17F /* MainTextAssembly.m in Sources */,
+				D93097090EC419E63EC7C4BB /* MainTextViewController.m in Sources */,
+				B0CAB1C53D93E55682DDB2AD /* MainTextPresenter.m in Sources */,
+				0D35F8F7966050152C392DCA /* MainTextInteractor.m in Sources */,
+				0F98797662637A97B9A661EE /* MainTextRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC8F15741C496C77003D7225 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8F15751C496C77003D7225 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC8F15791C496C77003D7225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8F157A1C496C77003D7225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC8F157D1C496C77003D7225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC8F157E1C496C77003D7225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC8F15801C496C77003D7225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0044B69E34181737BB6184F4 /* Pods-TestViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergey.TestViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC8F15811C496C77003D7225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01029516D95C6C1B7EAD899B /* Pods-TestViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sergey.TestViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC8F15631C496C77003D7225 /* Build configuration list for PBXProject "TestViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8F157D1C496C77003D7225 /* Debug */,
+				FC8F157E1C496C77003D7225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8F157F1C496C77003D7225 /* Build configuration list for PBXNativeTarget "TestViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8F15801C496C77003D7225 /* Debug */,
+				FC8F15811C496C77003D7225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC8F15601C496C77003D7225 /* Project object */;
+}

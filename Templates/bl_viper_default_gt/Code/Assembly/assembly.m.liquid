@@ -1,0 +1,47 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+#import "{{ prefix }}{{ module_info.name }}Assembly.h"
+
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}Interactor.h"
+#import "{{ prefix }}{{ module_info.name }}Presenter.h"
+#import "{{ prefix }}{{ module_info.name }}Router.h"
+
+@implementation {{ prefix }}{{ module_info.name }}Assembly
+
+
++ (id <{{ prefix }}{{ module_info.name }}ModuleInput>)createModule
+{
+    {{ prefix }}{{ module_info.name }}ViewController *view = [self viewController];
+	// uncomment if need view preloading
+    // [view view]; 
+    {{ prefix }}{{ module_info.name }}Interactor *interactor = [{{ prefix }}{{ module_info.name }}Interactor new];
+    {{ prefix }}{{ module_info.name }}Presenter *presenter = [{{ prefix }}{{ module_info.name }}Presenter new];
+    {{ prefix }}{{ module_info.name }}Router *router = [{{ prefix }}{{ module_info.name }}Router new];
+    
+	router.presenter = presenter;
+	
+    view.output = presenter;
+    interactor.output = presenter;
+    
+    presenter.view = view;
+    presenter.interactor = interactor;
+    presenter.router = router;
+    [presenter configureModule];
+    
+    return presenter;
+}
+
++ ({{ prefix }}{{ module_info.name }}ViewController *)viewController {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    {{ prefix }}{{ module_info.name }}ViewController * vc = ({{ prefix }}{{ module_info.name }}ViewController *)[sb instantiateViewControllerWithIdentifier:@"{{ module_info.name }}ViewController"];
+    return vc;
+}
+
+@end
