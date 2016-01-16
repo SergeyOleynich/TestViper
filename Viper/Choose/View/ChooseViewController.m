@@ -16,7 +16,7 @@
 
 @interface ChooseViewController () <TableViewProtocol>
 
-@property (strong, nonatomic) NSArray *dataSource;
+@property (nonatomic, strong) NSArray *dataSource;
 
 @end
 

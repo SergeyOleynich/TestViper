@@ -13,8 +13,8 @@
 
 @interface MainTextViewController () <UITextViewDelegate>
 
-@property (weak, nonatomic) IBOutlet SOTextView *mainTextView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet SOTextView *mainTextView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 
 - (IBAction)backAction:(UIButton *)sender;
 

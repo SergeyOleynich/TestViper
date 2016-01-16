@@ -8,9 +8,15 @@
 
 #import "ChoosePresenter.h"
 
+//helpers
+#import <HelperFunctions.h>
+
 #import "ChooseViewInput.h"
 #import "ChooseInteractorInput.h"
 #import "ChooseRouterInput.h"
+
+#import "MainTextAssembly.h"
+#import "MainTextModuleInput.h"
 
 //models
 #import "News.h"
@@ -44,7 +50,11 @@
 
 - (void)didSelectNews:(NSUInteger)newsID
 {
-    [self.router showNewsWithID:newsID];
+    id <MainTextModuleInput> preloader = [MainTextAssembly createModule];
+    BLHFDispatchToMainQueue(^{
+        [preloader configureModuleWithNewsID:newsID];
+        [preloader showNewsFromViewController:(UIViewController *)self.view];
+    });
 }
 
 #pragma mark - Методы ChooseInteractorOutput

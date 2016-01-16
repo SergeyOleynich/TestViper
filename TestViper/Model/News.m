@@ -9,7 +9,6 @@
 #import "News.h"
 
 static NSString *const newsDictionaryMainTextKey = @"mainText";
-static NSString *const newsDictionaryTextKey = @"text";
 static NSString *const newsDictionaryIDKey = @"id";
 
 @implementation News
@@ -17,14 +16,10 @@ static NSString *const newsDictionaryIDKey = @"id";
 -(instancetype)initWithDict:(NSDictionary *)dictionary
 {
     if (self = [super init])
-    {
+    {        
         if ([dictionary objectForKey:newsDictionaryMainTextKey])
         {
             _newsMainText = dictionary[newsDictionaryMainTextKey];
-        }
-        if ([dictionary objectForKey:newsDictionaryMainTextKey])
-        {
-            _newsText = dictionary[newsDictionaryTextKey];
         }
         if (dictionary[newsDictionaryIDKey])
         {

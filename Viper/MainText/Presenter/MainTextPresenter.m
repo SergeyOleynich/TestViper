@@ -28,9 +28,11 @@
     self.newsID = newsID;
 }
 
-- (void)showNewsFromViewController:(id)vc
+- (void)showNewsFromViewController:(UIViewController *)vc
 {
-    [self.router showFromViewController:vc];
+    //тут можно сделать router делегатом для перехода если нам надо как то кастомно показать?
+    [vc.navigationController pushViewController:(UIViewController *)self.view animated:YES];
+    //[self.router showFromViewController:vc];
 }
 
 #pragma mark - Методы MainTextViewOutput
@@ -59,7 +61,8 @@
     [self.view takeTitle:title];
 }
 
--(void)dealloc {
+-(void)dealloc
+{
     NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
 }
 

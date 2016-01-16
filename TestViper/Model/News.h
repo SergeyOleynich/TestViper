@@ -12,8 +12,7 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dictionary;
 
-@property (copy, nonatomic, readonly) NSString *newsText;
-@property (copy, nonatomic, readonly) NSString *newsMainText;
-@property (assign, nonatomic, readonly) NSUInteger newsID;
+@property (nonatomic, copy, readonly) NSString *newsMainText;
+@property (nonatomic, assign, readonly) NSUInteger newsID;
 
 @end

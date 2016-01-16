@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "ChooseViewInput.h"
+#import "ChooseRouterInput.h"
 
 @protocol ChooseViewOutput;
 

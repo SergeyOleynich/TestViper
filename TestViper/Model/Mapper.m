@@ -13,9 +13,11 @@
 
 @implementation Mapper
 
-+ (NSArray *)mapperDictionaryForNews:(NSArray *)array {
++ (NSArray *)mapperDictionaryForNews:(NSArray *)array
+{
     NSMutableArray *arrayM = [NSMutableArray array];
-    for (NSDictionary *newsDict in array) {
+    for (NSDictionary *newsDict in array)
+    {
         News *new = [[News alloc] initWithDict:newsDict];
         [arrayM addObject:new];
     }

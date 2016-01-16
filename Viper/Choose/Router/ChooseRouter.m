@@ -9,9 +9,6 @@
 #import "ChooseRouter.h"
 #import <HelperFunctions.h>
 
-#import "MainTextAssembly.h"
-#import "MainTextModuleInput.h"
-
 @implementation ChooseRouter
 
 #pragma mark - ChooseRouterInput
@@ -36,12 +33,7 @@
 
 - (void)showNewsWithID:(NSInteger)newsID {
     
-    id <MainTextModuleInput> preloader = [MainTextAssembly createModule];
     
-    BLHFDispatchToMainQueue(^{
-        [preloader configureModuleWithNewsID:newsID];
-        [preloader showNewsFromViewController:(UIViewController *)self.presenter.view];
-    });
 }
 
 @end
