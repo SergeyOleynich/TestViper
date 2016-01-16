@@ -17,14 +17,13 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor blackColor];
     
-    //ChooseRouter *router = [ChooseRouter new];
-    //router.presenter = [ChooseAssembly createModule];
-    //[router presentFromWindow:self.window];
-    
-    id <ChooseRouterInput> router = [ChooseAssembly createModule];
-    [router presentFromWindow:self.window];
+    id <ChooseModuleInput> preloader = [ChooseAssembly createModule];
+    [preloader presentFromNavigationController:self.window];
     
     return YES;
 }

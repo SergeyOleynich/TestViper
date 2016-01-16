@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MainTextRouterInput;
+@protocol MainTextModuleInput;
 
 /**
  @author Sergey Oleynich
@@ -17,7 +17,6 @@
  */
 @interface MainTextAssembly : NSObject
 
-+ (id <MainTextRouterInput>)createModule;
-
++ (id <MainTextModuleInput>)createModule;
 
 @end

@@ -16,10 +16,7 @@
  Метод настраивает начальный стейт view
  */
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 - (void)setupInitialState;
-
-//- (void)presentTextRo
+- (void)updateWithNews:(NSArray *)news;
 
 @end

@@ -12,7 +12,8 @@
 @protocol ChooseRouterInput <NSObject>
 
 - (void)presentFromWindow:(UIWindow *)window;
+- (void)presentFromNavigationController:(UIWindow *)window;
 
-- (void)showTextWindow:(NSString *)text;
+- (void)showNewsWithID:(NSInteger)newsID;
 
 @end

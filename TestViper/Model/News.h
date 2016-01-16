@@ -14,5 +14,6 @@
 
 @property (copy, nonatomic, readonly) NSString *newsText;
 @property (copy, nonatomic, readonly) NSString *newsMainText;
+@property (assign, nonatomic, readonly) NSUInteger newsID;
 
 @end

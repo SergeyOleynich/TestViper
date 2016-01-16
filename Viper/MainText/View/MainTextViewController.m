@@ -14,6 +14,9 @@
 @interface MainTextViewController () <UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet SOTextView *mainTextView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+- (IBAction)backAction:(UIButton *)sender;
 
 @end
 
@@ -37,18 +40,29 @@
     [self.mainTextView animateText];
 }
 
+- (void)dealloc
+{
+    NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
+}
+
 #pragma mark - Методы MainTextViewInput
 
-- (void)setupInitialStateWithText:(NSString *)text {
+- (void)setupInitialState
+{
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
     self.mainTextView.delegate = self;
+}
+
+- (void)takeMainText:(NSString *)mainText
+{
+    self.mainTextView.text = mainText;
     [self.mainTextView layoutIfNeeded];
-    self.mainTextView.text = text;
     [self.mainTextView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 }
 
--(void)dealloc {
-    NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
+- (void)takeTitle:(NSString *)title
+{
+    self.titleLabel.text = title;
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -67,4 +81,14 @@
     [self.mainTextView unTouchTextView];
 }
 
+#pragma mark - Actions
+
+- (IBAction)backAction:(UIButton *)sender
+{
+    [self.output didSelectBackButton];
+}
+
 @end
+
+
+

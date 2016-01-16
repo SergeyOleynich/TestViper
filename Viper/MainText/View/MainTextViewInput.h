@@ -15,6 +15,8 @@
 
  Метод настраивает начальный стейт view
  */
-- (void)setupInitialStateWithText:(NSString *)text;
+- (void)setupInitialState;
+- (void)takeMainText:(NSString *)mainText;
+- (void)takeTitle:(NSString *)title;
 
 @end

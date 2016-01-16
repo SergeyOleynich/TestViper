@@ -13,6 +13,8 @@
 
 - (void)presentFromWindow:(UIWindow *)window;
 
-- (void)showFromViewController:(UIViewController *)controller withText:(NSString *)text;
+- (void)showFromViewController:(UIViewController *)vc;
+
+- (void)popVC;
 
 @end

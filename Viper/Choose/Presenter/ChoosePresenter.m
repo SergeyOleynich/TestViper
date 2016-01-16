@@ -15,56 +15,43 @@
 //models
 #import "News.h"
 
-@interface ChoosePresenter ()
-
-@property (strong, nonatomic) NSArray *dataSource;
-
-@end
-
 @implementation ChoosePresenter
 
 #pragma mark - Методы ChooseModuleInput
 
-- (void)configureModule {
+- (void)configureModule
+{
     // Стартовая конфигурация модуля, не привязанная к состоянию view
+}
+
+- (void)presentFromWindow:(UIWindow *)window
+{
+    [self.router presentFromWindow:window];
+}
+
+- (void)presentFromNavigationController:(UIWindow *)window
+{
+    [self.router presentFromNavigationController:window];
 }
 
 #pragma mark - Методы ChooseViewOutput
 
-- (void)didTriggerViewReadyEvent {
-    [self.view tableView].delegate = self;
-    [self.view tableView].dataSource = self;
+- (void)didTriggerViewReadyEvent
+{
+    [self.view setupInitialState];
     [self.interactor requestData];
-	[self.view setupInitialState];
+}
+
+- (void)didSelectNews:(NSUInteger)newsID
+{
+    [self.router showNewsWithID:newsID];
 }
 
 #pragma mark - Методы ChooseInteractorOutput
 
-- (void)updatePresenterWithText:(NSArray *)news {
-    self.dataSource = news;
-    [[self.view tableView] reloadData];
-}
-
-#pragma mark - TableViewProtocol
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.count;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    News *new = self.dataSource[indexPath.row];
-    cell.textLabel.text = new.newsMainText;
-    
-    return cell;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    News *new = self.dataSource[indexPath.row];
-    
-    [self.router showTextWindow:new.newsText];
-    
+- (void)updatePresenterWithText:(NSArray *)news
+{
+    [self.view updateWithNews:news];
 }
 
 @end

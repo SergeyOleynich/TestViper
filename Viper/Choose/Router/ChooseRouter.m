@@ -10,7 +10,7 @@
 #import <HelperFunctions.h>
 
 #import "MainTextAssembly.h"
-#import "MainTextRouterInput.h"
+#import "MainTextModuleInput.h"
 
 @implementation ChooseRouter
 
@@ -19,23 +19,28 @@
 - (void)presentFromWindow:(UIWindow *)window
 {
     BLHFDispatchToMainQueue(^{
-        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:(UIViewController *)self.presenter.view];
-        [window setRootViewController:navVC];
+        [window setRootViewController:(UIViewController *)self.presenter.view];
         [window makeKeyAndVisible];
     });
-    /*
-    BRLDispatchToMainQueue(^{
-        
-    });
-     */
 }
 
-- (void)showTextWindow:(NSString *)text {
+- (void)presentFromNavigationController:(UIWindow *)window
+{
+    BLHFDispatchToMainQueue(^{
+        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:(UIViewController *)self.presenter.view];
+        [window setRootViewController:navVC];
+        navVC.navigationBarHidden = YES;
+        [window makeKeyAndVisible];
+    });
+}
+
+- (void)showNewsWithID:(NSInteger)newsID {
     
-    id <MainTextRouterInput> router = [MainTextAssembly createModule];
+    id <MainTextModuleInput> preloader = [MainTextAssembly createModule];
     
     BLHFDispatchToMainQueue(^{
-        [router showFromViewController:(UIViewController *)self.presenter.view withText:text];
+        [preloader configureModuleWithNewsID:newsID];
+        [preloader showNewsFromViewController:(UIViewController *)self.presenter.view];
     });
 }
 

@@ -16,7 +16,7 @@
 @implementation MainTextAssembly
 
 
-+ (id <MainTextRouterInput>)createModule
++ (id <MainTextModuleInput>)createModule
 {
     MainTextViewController *view = [self viewController];
 	// uncomment if need view preloading
@@ -33,9 +33,8 @@
     presenter.view = view;
     presenter.interactor = interactor;
     presenter.router = router;
-    [presenter configureModuleWithText:nil];
     
-    return router;
+    return presenter;
 }
 
 + (MainTextViewController *)viewController {

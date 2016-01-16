@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ChooseRouterInput;
+@protocol ChooseModuleInput;
 
 /**
  @author Sergey Oleynich
@@ -17,7 +17,7 @@
  */
 @interface ChooseAssembly : NSObject
 
-+ (id <ChooseRouterInput>)createModule;
++ (id <ChooseModuleInput>)createModule;
 
 
 @end

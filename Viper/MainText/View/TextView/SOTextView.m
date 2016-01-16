@@ -21,28 +21,32 @@
 
 -(instancetype)init {
     if (self = [super init]) {
-        self.shouldAnimating = YES;
-        self.editable = NO;
+        [self setupView];
     }
     return self;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        self.shouldAnimating = YES;
-        self.editable = NO;
-        
-        id nav = [UIApplication sharedApplication].keyWindow.rootViewController;
-        if ([nav isKindOfClass:[UINavigationController class]]) {
-            self.pointY = -CGRectGetMaxY([(UINavigationController *)nav navigationBar].frame);
-        }
+        [self setupView];
     }
     return self;
 }
 
--(void)dealloc {
-    NSLog(@"DEALLOC");
+- (void)setupView {
+    self.shouldAnimating = YES;
+    self.editable = NO;
+    //id nav = [UIApplication sharedApplication].keyWindow.rootViewController;
+    //if ([nav isKindOfClass:[UINavigationController class]]) {
+        //self.pointY = -CGRectGetMaxY([(UINavigationController *)nav navigationBar].frame);
+    //}
 }
+
+-(void)dealloc {
+    NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
+}
+
+#pragma mark - Overriden
 
 #pragma mark - Helpers methods
 

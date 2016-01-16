@@ -10,21 +10,25 @@
 
 static NSString *const newsDictionaryMainTextKey = @"mainText";
 static NSString *const newsDictionaryTextKey = @"text";
+static NSString *const newsDictionaryIDKey = @"id";
 
 @implementation News
 
--(instancetype)initWithDict:(NSDictionary *)dictionary {
-    if (self = [super init]) {
-        
-#ifdef DEBUG
-        NSAssert(dictionary[newsDictionaryMainTextKey] != nil, @"news dictionary should have text");
-#endif
-        
-        if ([dictionary objectForKey:newsDictionaryMainTextKey]) {
+-(instancetype)initWithDict:(NSDictionary *)dictionary
+{
+    if (self = [super init])
+    {
+        if ([dictionary objectForKey:newsDictionaryMainTextKey])
+        {
             _newsMainText = dictionary[newsDictionaryMainTextKey];
         }
-        if ([dictionary objectForKey:newsDictionaryMainTextKey]) {
+        if ([dictionary objectForKey:newsDictionaryMainTextKey])
+        {
             _newsText = dictionary[newsDictionaryTextKey];
+        }
+        if (dictionary[newsDictionaryIDKey])
+        {
+            _newsID = [dictionary[newsDictionaryIDKey] integerValue];
         }
     }
     return self;

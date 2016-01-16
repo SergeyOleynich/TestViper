@@ -14,7 +14,7 @@
 
 @interface MainTextPresenter ()
 
-@property (strong, nonatomic) NSString *text;
+@property (assign, nonatomic) NSUInteger newsID;
 
 @end
 
@@ -22,18 +22,42 @@
 
 #pragma mark - Методы MainTextModuleInput
 
-- (void)configureModuleWithText:(NSString *)text {
+- (void)configureModuleWithNewsID:(NSUInteger)newsID
+{
     // Стартовая конфигурация модуля, не привязанная к состоянию view
-    self.text = text;
+    self.newsID = newsID;
+}
+
+- (void)showNewsFromViewController:(id)vc
+{
+    [self.router showFromViewController:vc];
 }
 
 #pragma mark - Методы MainTextViewOutput
 
-- (void)didTriggerViewReadyEvent {
-	[self.view setupInitialStateWithText:self.text];
+- (void)didTriggerViewReadyEvent
+{
+    [self.view setupInitialState];
+    [self.interactor getMainTextForID:self.newsID];
+    [self.interactor getTitleForID:self.newsID];
+}
+
+- (void)didSelectBackButton
+{
+    [self.router popVC];
 }
 
 #pragma mark - Методы MainTextInteractorOutput
+
+- (void)bringPresenterNewsText:(NSString *)text
+{
+    [self.view takeMainText:text];
+}
+
+- (void)bringTitle:(NSString *)title
+{
+    [self.view takeTitle:title];
+}
 
 -(void)dealloc {
     NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));

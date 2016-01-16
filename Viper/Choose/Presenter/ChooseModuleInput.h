@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol ChooseModuleInput <NSObject>
 
@@ -16,5 +17,8 @@
  Метод инициирует стартовую конфигурацию текущего модуля
  */
 - (void)configureModule;
+
+- (void)presentFromWindow:(UIWindow *)window;
+- (void)presentFromNavigationController:(UIWindow *)window;
 
 @end

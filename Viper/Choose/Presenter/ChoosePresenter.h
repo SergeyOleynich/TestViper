@@ -16,7 +16,7 @@
 
 @interface ChoosePresenter : NSObject <ChooseModuleInput, ChooseViewOutput, ChooseInteractorOutput>
 
-@property (nonatomic, weak) id<ChooseViewInput> view;
+@property (nonatomic, strong) id<ChooseViewInput> view;
 @property (nonatomic, strong) id<ChooseInteractorInput> interactor;
 @property (nonatomic, strong) id<ChooseRouterInput> router;
 

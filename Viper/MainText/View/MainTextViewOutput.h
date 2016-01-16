@@ -17,4 +17,6 @@
  */
 - (void)didTriggerViewReadyEvent;
 
+- (void)didSelectBackButton;
+
 @end

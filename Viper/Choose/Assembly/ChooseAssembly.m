@@ -15,7 +15,7 @@
 
 @implementation ChooseAssembly
 
-+ (id <ChooseRouterInput>)createModule
++ (id <ChooseModuleInput>)createModule
 {
     ChooseViewController *view = [self viewController];
 	// uncomment if need view preloading
@@ -34,7 +34,7 @@
     presenter.router = router;
     [presenter configureModule];
     
-    return router;
+    return presenter;
 }
 
 + (ChooseViewController *)viewController {

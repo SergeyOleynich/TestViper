@@ -21,13 +21,18 @@
     });
 }
 
--(void)showFromViewController:(UIViewController *)controller withText:(NSString *)text {
-    [self.presenter configureModuleWithText:[text copy]];
-    //[controller presentViewController:(UIViewController *)self.presenter.view animated:YES completion:nil];
-    [controller.navigationController pushViewController:(UIViewController *)self.presenter.view animated:YES];
+-(void)showFromViewController:(UIViewController *)vc
+{
+    [vc.navigationController pushViewController:(UIViewController *)self.presenter.view animated:YES];
 }
 
--(void)dealloc {
+- (void)popVC
+{
+    [[(UIViewController *)self.presenter.view navigationController] popViewControllerAnimated:YES];
+}
+
+- (void)dealloc
+{
     NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
 }
 

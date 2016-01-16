@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol MainTextModuleInput <NSObject>
 
@@ -15,6 +16,8 @@
 
  Метод инициирует стартовую конфигурацию текущего модуля
  */
-- (void)configureModuleWithText:(NSString *)text;
+- (void)configureModuleWithNewsID:(NSUInteger)newsID;
+
+- (void)showNewsFromViewController:(UIViewController *)vc;
 
 @end

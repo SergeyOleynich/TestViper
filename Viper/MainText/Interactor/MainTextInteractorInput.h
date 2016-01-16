@@ -10,4 +10,7 @@
 
 @protocol MainTextInteractorInput <NSObject>
 
+- (void)getMainTextForID:(NSUInteger)newsID;
+- (void)getTitleForID:(NSUInteger)newsID;
+
 @end

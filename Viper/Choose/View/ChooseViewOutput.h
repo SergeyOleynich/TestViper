@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TableViewProtocol.h"
 
-@protocol ChooseViewOutput <NSObject, TableViewProtocol>
+@protocol ChooseViewOutput <NSObject>
 
 /**
  @author Sergey Oleynich
@@ -20,5 +19,6 @@
 //@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (void)didTriggerViewReadyEvent;
+- (void)didSelectNews:(NSUInteger)newsID;
 
 @end
