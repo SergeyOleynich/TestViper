@@ -11,13 +11,7 @@
 
 @protocol MainTextModuleInput <NSObject>
 
-/**
- @author Sergey Oleynich
-
- Метод инициирует стартовую конфигурацию текущего модуля
- */
-- (void)configureModuleWithNewsID:(NSUInteger)newsID;
-
+- (void)configureModuleWithNewsID:(NSString *)newsID;
 - (void)showNewsFromViewController:(UIViewController *)vc;
 
 @end

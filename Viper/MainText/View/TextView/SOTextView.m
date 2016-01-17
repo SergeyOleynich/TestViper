@@ -42,6 +42,11 @@
     //}
 }
 
+- (void)setText:(NSString *)text {
+    [super setText:text];
+    self.pointY = 0;
+}
+
 -(void)dealloc {
     NSLog(@"%s %@", __PRETTY_FUNCTION__, NSStringFromClass([self class]));
 }

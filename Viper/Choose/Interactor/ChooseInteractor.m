@@ -17,15 +17,10 @@
 #pragma mark - Методы ChooseInteractorInput
 
 - (void)requestData {
-    [self updatePresenter];
-}
-
-- (void)updatePresenter {
+    NSArray *news = @[@{@"id" : @0, @"mainText" : @"Lorem ipsum"},
+                      @{@"id" : @1, @"mainText" : @"My text"}];
     
-    NSArray *news = @[@{@"id" : @1, @"mainText" : @"Lorem ipsum"},
-                      @{@"id" : @2, @"mainText" : @"My text"}];
-    
-    [self.output updatePresenterWithText:[Mapper mapperDictionaryForNews:news]];
+    [self.output dataIsReady:[Mapper mapperDictionaryForNews:news]];
 }
 
 @end

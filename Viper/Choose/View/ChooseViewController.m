@@ -12,7 +12,7 @@
 #import "TableViewProtocol.h"
 
 //models
-#import "News.h"
+#import "NewsDomainModule.h"
 
 @interface ChooseViewController () <TableViewProtocol>
 
@@ -34,7 +34,6 @@
 
 - (void)setupInitialState
 {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
@@ -57,8 +56,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     NSUInteger index = indexPath.row;
-    News *new = self.dataSource[index];
-    cell.textLabel.text = new.newsMainText;
+    NewsDomainModule *new = self.dataSource[index];
+    cell.textLabel.text = new.newsTitle;
     
     return cell;
 }
@@ -68,8 +67,8 @@
     NSUInteger index = indexPath.row;
     if (index < self.dataSource.count)
     {
-        News *news = self.dataSource[indexPath.row];
-        [self.output didSelectNews:news.newsID];
+        NewsDomainModule *news = self.dataSource[indexPath.row];
+        [self.output didSelectNews:news.newsId];
     }
 }
 

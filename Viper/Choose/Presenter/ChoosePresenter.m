@@ -19,7 +19,10 @@
 #import "MainTextModuleInput.h"
 
 //models
-#import "News.h"
+#import "NewsDomainModule.h"
+
+//helpers
+#import <HelperFunctions.h>
 
 @implementation ChoosePresenter
 
@@ -45,23 +48,34 @@
 - (void)didTriggerViewReadyEvent
 {
     [self.view setupInitialState];
-    [self.interactor requestData];
+    BLHFDispatchToBackgroundQueue(^{
+        [self.interactor requestData];
+    });
 }
 
-- (void)didSelectNews:(NSUInteger)newsID
+- (void)didSelectNews:(NSString *)newsID
 {
-    id <MainTextModuleInput> preloader = [MainTextAssembly createModule];
     BLHFDispatchToMainQueue(^{
-        [preloader configureModuleWithNewsID:newsID];
-        [preloader showNewsFromViewController:(UIViewController *)self.view];
+        [self.newsReader configureModuleWithNewsID:newsID];
+        [self.router showNews];
     });
 }
 
 #pragma mark - Методы ChooseInteractorOutput
 
-- (void)updatePresenterWithText:(NSArray *)news
+- (void)dataIsReady:(NSArray *)data
 {
-    [self.view updateWithNews:news];
+    BLHFDispatchToMainQueue(^{
+        [self.view updateWithNews:data];
+    });
+    
+}
+
+- (id<MainTextModuleInput>)newsReader {
+    if (!_newsReader) {
+        _newsReader = [MainTextAssembly createModule];
+    }
+    return _newsReader;
 }
 
 @end

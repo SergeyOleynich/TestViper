@@ -14,6 +14,6 @@
 
 @interface MainTextViewController : UIViewController <MainTextViewInput>
 
-@property (nonatomic, strong) id<MainTextViewOutput> output;
+@property (nonatomic, weak) id<MainTextViewOutput> output;
 
 @end

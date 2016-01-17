@@ -16,7 +16,7 @@
 
 @interface MainTextPresenter : NSObject <MainTextModuleInput, MainTextViewOutput, MainTextInteractorOutput>
 
-@property (nonatomic, weak) id<MainTextViewInput> view;
+@property (nonatomic, strong) id<MainTextViewInput> view;
 @property (nonatomic, strong) id<MainTextInteractorInput> interactor;
 @property (nonatomic, strong) id<MainTextRouterInput> router;
 

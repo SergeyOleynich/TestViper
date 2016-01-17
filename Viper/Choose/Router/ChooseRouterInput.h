@@ -15,5 +15,6 @@
 - (void)presentFromNavigationController:(UIWindow *)window;
 
 - (void)showNewsWithID:(NSInteger)newsID;
+- (void)showNews;
 
 @end

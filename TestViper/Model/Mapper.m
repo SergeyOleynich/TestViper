@@ -9,7 +9,7 @@
 #import "Mapper.h"
 
 //News
-#import "News.h"
+#import "NewsDomainModule.h"
 
 @implementation Mapper
 
@@ -18,8 +18,8 @@
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *newsDict in array)
     {
-        News *new = [[News alloc] initWithDict:newsDict];
-        [arrayM addObject:new];
+        NewsDomainModule *news = [[NewsDomainModule alloc] initWithDictionary:newsDict];
+        [arrayM addObject:news];
     }
     return (NSArray *)arrayM;
 }

@@ -7,16 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class NewsDomainModule;
 
 @protocol MainTextViewInput <NSObject>
 
-/**
- @author Sergey Oleynich
-
- Метод настраивает начальный стейт view
- */
 - (void)setupInitialState;
-- (void)takeMainText:(NSString *)mainText;
-- (void)takeTitle:(NSString *)title;
+- (void)updateWithData:(NewsDomainModule *)module;
 
 @end

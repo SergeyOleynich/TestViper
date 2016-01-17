@@ -7,6 +7,10 @@
 //
 
 #import "ChooseRouter.h"
+
+#import "MainTextModuleInput.h"
+
+//helpers
 #import <HelperFunctions.h>
 
 @implementation ChooseRouter
@@ -28,6 +32,13 @@
         [window setRootViewController:navVC];
         navVC.navigationBarHidden = YES;
         [window makeKeyAndVisible];
+    });
+}
+
+- (void)showNews
+{
+    BLHFDispatchToMainQueue(^{
+        [self.presenter.newsReader showNewsFromViewController:(UIViewController *)self.presenter.view];
     });
 }
 

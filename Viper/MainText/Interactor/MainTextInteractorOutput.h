@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class NewsDomainModule;
+
 @protocol MainTextInteractorOutput <NSObject>
 
-- (void)bringPresenterNewsText:(NSString *)text;
-- (void)bringTitle:(NSString *)title;
+- (void)dataIsReady:(NewsDomainModule *)model;
 
 @end

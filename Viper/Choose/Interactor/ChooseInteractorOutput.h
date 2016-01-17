@@ -10,6 +10,6 @@
 
 @protocol ChooseInteractorOutput <NSObject>
 
-- (void)updatePresenterWithText:(NSArray *)news;
+- (void)dataIsReady:(NSArray *)data;
 
 @end

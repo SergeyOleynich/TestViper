@@ -11,6 +11,8 @@
 #import "MainTextViewOutput.h"
 #import "SOTextView.h"
 
+#import "NewsDomainModule.h"
+
 @interface MainTextViewController () <UITextViewDelegate>
 
 @property (nonatomic, weak) IBOutlet SOTextView *mainTextView;
@@ -32,7 +34,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    [self.mainTextView layoutIfNeeded];
+    [self.mainTextView setContentOffset:CGPointZero];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -49,20 +52,13 @@
 
 - (void)setupInitialState
 {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
     self.mainTextView.delegate = self;
 }
 
-- (void)takeMainText:(NSString *)mainText
+- (void)updateWithData:(NewsDomainModule *)module
 {
-    self.mainTextView.text = mainText;
-    [self.mainTextView layoutIfNeeded];
-    [self.mainTextView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
-}
-
-- (void)takeTitle:(NSString *)title
-{
-    self.titleLabel.text = title;
+    self.titleLabel.text = module.newsTitle;
+    self.mainTextView.text = module.newsText;
 }
 
 #pragma mark - UIScrollViewDelegate

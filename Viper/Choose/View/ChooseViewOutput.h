@@ -10,15 +10,7 @@
 
 @protocol ChooseViewOutput <NSObject>
 
-/**
- @author Sergey Oleynich
-
- Метод сообщает презентеру о том, что view готова к работе
- */
-
-//@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 - (void)didTriggerViewReadyEvent;
-- (void)didSelectNews:(NSUInteger)newsID;
+- (void)didSelectNews:(NSString *)newsID;
 
 @end

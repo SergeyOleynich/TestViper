@@ -18,12 +18,12 @@
 		A3D2F1C0A9314274A28636D6 /* ChoosePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF014E22905C617380B55D3 /* ChoosePresenter.m */; };
 		B0CAB1C53D93E55682DDB2AD /* MainTextPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED759E95C077196E57AD374 /* MainTextPresenter.m */; };
 		D93097090EC419E63EC7C4BB /* MainTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A428065D3CECDF121C456A01 /* MainTextViewController.m */; };
+		FC2D8E501C4BA65300C375C3 /* NewsDomainModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D8E4F1C4BA65300C375C3 /* NewsDomainModule.m */; };
 		FC8F156D1C496C77003D7225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156C1C496C77003D7225 /* main.m */; };
 		FC8F15701C496C77003D7225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156F1C496C77003D7225 /* AppDelegate.m */; };
 		FC8F15761C496C77003D7225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15741C496C77003D7225 /* Main.storyboard */; };
 		FC8F15781C496C77003D7225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15771C496C77003D7225 /* Assets.xcassets */; };
 		FC8F157B1C496C77003D7225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8F15791C496C77003D7225 /* LaunchScreen.storyboard */; };
-		FC8F15891C498CC5003D7225 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F15881C498CC5003D7225 /* News.m */; };
 		FC8F158D1C498D2F003D7225 /* Mapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F158C1C498D2F003D7225 /* Mapper.m */; };
 		FC8F15901C49A91D003D7225 /* SOTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F158F1C49A91D003D7225 /* SOTextView.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +64,8 @@
 		EA00661A194020E7F0A86504 /* MainTextInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractor.h; sourceTree = "<group>"; };
 		ECAEACCB585A90EAE4F97FF3 /* MainTextViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewInput.h; sourceTree = "<group>"; };
 		F433B24ED0B20C982429C334 /* ChooseRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseRouterInput.h; sourceTree = "<group>"; };
+		FC2D8E4E1C4BA65300C375C3 /* NewsDomainModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDomainModule.h; path = Layers/DomainModels/NewsDomainModule.h; sourceTree = "<group>"; };
+		FC2D8E4F1C4BA65300C375C3 /* NewsDomainModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDomainModule.m; path = Layers/DomainModels/NewsDomainModule.m; sourceTree = "<group>"; };
 		FC8F15681C496C77003D7225 /* TestViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8F156C1C496C77003D7225 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC8F156E1C496C77003D7225 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,8 +75,6 @@
 		FC8F157A1C496C77003D7225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8F157C1C496C77003D7225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8F15861C4974E7003D7225 /* TableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewProtocol.h; sourceTree = "<group>"; };
-		FC8F15871C498CC5003D7225 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = Model/News.h; sourceTree = "<group>"; };
-		FC8F15881C498CC5003D7225 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Model/News.m; sourceTree = "<group>"; };
 		FC8F158B1C498D2F003D7225 /* Mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mapper.h; path = Model/Mapper.h; sourceTree = "<group>"; };
 		FC8F158C1C498D2F003D7225 /* Mapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mapper.m; path = Model/Mapper.m; sourceTree = "<group>"; };
 		FC8F158E1C49A91D003D7225 /* SOTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOTextView.h; path = TextView/SOTextView.h; sourceTree = "<group>"; };
@@ -246,6 +246,25 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FC2D8E511C4BA65900C375C3 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				FC8F158B1C498D2F003D7225 /* Mapper.h */,
+				FC8F158C1C498D2F003D7225 /* Mapper.m */,
+				FC2D8E521C4BA66400C375C3 /* DomainModels */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		FC2D8E521C4BA66400C375C3 /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC2D8E4E1C4BA65300C375C3 /* NewsDomainModule.h */,
+				FC2D8E4F1C4BA65300C375C3 /* NewsDomainModule.m */,
+			);
+			name = DomainModels;
+			sourceTree = "<group>";
+		};
 		FC8F155F1C496C77003D7225 = {
 			isa = PBXGroup;
 			children = (
@@ -276,7 +295,7 @@
 				FC8F157C1C496C77003D7225 /* Info.plist */,
 				FC8F156B1C496C77003D7225 /* Supporting Files */,
 				FC8F15861C4974E7003D7225 /* TableViewProtocol.h */,
-				FC8F158A1C498CCA003D7225 /* Model */,
+				FC2D8E511C4BA65900C375C3 /* Layers */,
 			);
 			path = TestViper;
 			sourceTree = "<group>";
@@ -287,17 +306,6 @@
 				FC8F156C1C496C77003D7225 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FC8F158A1C498CCA003D7225 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FC8F15871C498CC5003D7225 /* News.h */,
-				FC8F15881C498CC5003D7225 /* News.m */,
-				FC8F158B1C498D2F003D7225 /* Mapper.h */,
-				FC8F158C1C498D2F003D7225 /* Mapper.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		FC8F15911C49A923003D7225 /* TextView */ = {
@@ -437,7 +445,7 @@
 				A3D2F1C0A9314274A28636D6 /* ChoosePresenter.m in Sources */,
 				3967B10C0118661A3400C99B /* ChooseInteractor.m in Sources */,
 				FC8F15901C49A91D003D7225 /* SOTextView.m in Sources */,
-				FC8F15891C498CC5003D7225 /* News.m in Sources */,
+				FC2D8E501C4BA65300C375C3 /* NewsDomainModule.m in Sources */,
 				FC8F158D1C498D2F003D7225 /* Mapper.m in Sources */,
 				42465D447E880C8DA04BE042 /* ChooseRouter.m in Sources */,
 				3FBCC1A6F87F4C8C8B1FA17F /* MainTextAssembly.m in Sources */,
