@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MainTextViewOutput <NSObject>
+@protocol DispalyNewsTextViewOutput <NSObject>
 
 /**
  @author Sergey Oleynich

@@ -6,14 +6,14 @@
 //  Copyright 2016 SergeyC. All rights reserved.
 //
 
-#import "MainTextViewController.h"
+#import "DispalyNewsTextViewController.h"
 
-#import "MainTextViewOutput.h"
+#import "DispalyNewsTextViewOutput.h"
 #import "SOTextView.h"
 
 #import "NewsDomainModule.h"
 
-@interface MainTextViewController () <UITextViewDelegate>
+@interface DispalyNewsTextViewController () <UITextViewDelegate>
 
 @property (nonatomic, weak) IBOutlet SOTextView *mainTextView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation MainTextViewController
+@implementation DispalyNewsTextViewController
 
 #pragma mark - Методы жизненного цикла
 

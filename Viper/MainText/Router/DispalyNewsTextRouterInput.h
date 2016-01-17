@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol MainTextRouterInput <NSObject>
+@protocol DispalyNewsTextRouterInput <NSObject>
 
 - (void)presentFromWindow:(UIWindow *)window;
 

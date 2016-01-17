@@ -13,7 +13,7 @@
 #import "ChoosePresenter.h"
 #import "ChooseRouter.h"
 
-#import "MainTextAssembly.h"
+#import "DisplayNewsTextAssembly.h"
 
 @implementation ChooseAssembly
 
@@ -36,7 +36,7 @@
     presenter.router = router;
     [presenter configureModule];
     
-    presenter.newsReader = [MainTextAssembly createModule];
+    presenter.newsReader = [DisplayNewsTextAssembly createModule];
     
     return presenter;
 }

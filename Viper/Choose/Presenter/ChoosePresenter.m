@@ -15,8 +15,8 @@
 #import "ChooseInteractorInput.h"
 #import "ChooseRouterInput.h"
 
-#import "MainTextAssembly.h"
-#import "MainTextModuleInput.h"
+#import "DisplayNewsTextAssembly.h"
+#import "DispalyNewsTextModuleInput.h"
 
 //models
 #import "NewsDomainModule.h"
@@ -71,9 +71,9 @@
     
 }
 
-- (id<MainTextModuleInput>)newsReader {
+- (id<DisplayNewsTextModuleInput>)newsReader {
     if (!_newsReader) {
-        _newsReader = [MainTextAssembly createModule];
+        _newsReader = [DisplayNewsTextAssembly createModule];
     }
     return _newsReader;
 }

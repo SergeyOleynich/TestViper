@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class NewsDomainModule;
 
-@protocol MainTextViewInput <NSObject>
+@protocol DisplayNewsTextViewInput <NSObject>
 
 - (void)setupInitialState;
 - (void)updateWithData:(NewsDomainModule *)module;

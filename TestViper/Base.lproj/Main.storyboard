@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Main Text View Controller-->
+        <!--Dispaly News Text View Controller-->
         <scene sceneID="Iwd-Vo-23s">
             <objects>
-                <viewController storyboardIdentifier="MainTextViewController" id="tnx-MC-ga8" customClass="MainTextViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DispalyNewsTextViewController" id="tnx-MC-ga8" customClass="DispalyNewsTextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IJM-yN-FOi"/>
                         <viewControllerLayoutGuide type="bottom" id="jRh-iu-Zk1"/>
@@ -24,7 +24,7 @@
                                         <rect key="frame" x="279" y="35" width="42" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FJ-pp-KaS">

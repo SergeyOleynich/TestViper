@@ -8,7 +8,7 @@
 
 #import "ChooseRouter.h"
 
-#import "MainTextModuleInput.h"
+#import "DispalyNewsTextModuleInput.h"
 
 //helpers
 #import <HelperFunctions.h>

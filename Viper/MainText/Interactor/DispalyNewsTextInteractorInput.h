@@ -1,5 +1,5 @@
 //
-//  MainTextInteractorOutput.h
+//  MainTextInteractorInput.h
 //  TestViper
 //
 //  Created by Sergey Oleynich on 15/01/2016.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class NewsDomainModule;
+@protocol DispalyNewsTextInteractorInput <NSObject>
 
-@protocol MainTextInteractorOutput <NSObject>
-
-- (void)dataIsReady:(NewsDomainModule *)model;
+- (void)getDataForNewsID:(NSString *)newsID;
 
 @end

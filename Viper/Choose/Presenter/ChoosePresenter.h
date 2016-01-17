@@ -10,7 +10,7 @@
 #import "ChooseInteractorOutput.h"
 #import "ChooseModuleInput.h"
 
-#import "MainTextModuleInput.h"
+#import "DispalyNewsTextModuleInput.h"
 
 @protocol ChooseViewInput;
 @protocol ChooseInteractorInput;
@@ -22,6 +22,6 @@
 @property (nonatomic, strong) id<ChooseInteractorInput> interactor;
 @property (nonatomic, strong) id<ChooseRouterInput> router;
 
-@property (nonatomic, strong) id <MainTextModuleInput> newsReader;
+@property (nonatomic, strong) id <DisplayNewsTextModuleInput> newsReader;
 
 @end

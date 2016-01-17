@@ -6,14 +6,14 @@
 //  Copyright 2016 SergeyC. All rights reserved.
 //
 
-#import "MainTextInteractor.h"
+#import "DispalyNewsTextInteractor.h"
 
-#import "MainTextInteractorOutput.h"
+#import "DispalyNewsTextInteractorOutput.h"
 
 //models
 #import "NewsDomainModule.h"
 
-@implementation MainTextInteractor
+@implementation DispalyNewsTextInteractor
 
 #pragma mark - Методы MainTextInteractorInput
 

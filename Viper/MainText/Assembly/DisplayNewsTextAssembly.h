@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MainTextModuleInput;
+@protocol DisplayNewsTextModuleInput;
 
 /**
  @author Sergey Oleynich
 
  MainText module
  */
-@interface MainTextAssembly : NSObject
+@interface DisplayNewsTextAssembly : NSObject
 
-+ (id <MainTextModuleInput>)createModule;
++ (id <DisplayNewsTextModuleInput>)createModule;
 
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol MainTextModuleInput <NSObject>
+@protocol DisplayNewsTextModuleInput <NSObject>
 
 - (void)configureModuleWithNewsID:(NSString *)newsID;
 - (void)showNewsFromViewController:(UIViewController *)vc;

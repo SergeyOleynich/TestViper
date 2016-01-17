@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D35F8F7966050152C392DCA /* MainTextInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */; };
-		0F98797662637A97B9A661EE /* MainTextRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E02C2686642500FB06FD23 /* MainTextRouter.m */; };
+		0D35F8F7966050152C392DCA /* DispalyNewsTextInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8399BC95FF528B1B23E5AE9 /* DispalyNewsTextInteractor.m */; };
+		0F98797662637A97B9A661EE /* DispalyNewsTextRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E02C2686642500FB06FD23 /* DispalyNewsTextRouter.m */; };
 		3967B10C0118661A3400C99B /* ChooseInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 607E1824235B9E6B94FB3561 /* ChooseInteractor.m */; };
-		3FBCC1A6F87F4C8C8B1FA17F /* MainTextAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */; };
+		3FBCC1A6F87F4C8C8B1FA17F /* DisplayNewsTextAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F37EA62B2DC5D74F9528B /* DisplayNewsTextAssembly.m */; };
 		42465D447E880C8DA04BE042 /* ChooseRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 915713A5A6E297621764386E /* ChooseRouter.m */; };
 		4C3BB9DF24282A7B2B32F4E3 /* ChooseAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D03D5FA3551BF4BF302941A /* ChooseAssembly.m */; };
 		5F2C34D06B151BD9F222A9BA /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F01F7AE24BF2283BF059688 /* ChooseViewController.m */; };
 		611B9D2911B7BE80A7576C64 /* libPods-TestViper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13615BB9E2246A7AADB14D75 /* libPods-TestViper.a */; };
 		A3D2F1C0A9314274A28636D6 /* ChoosePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF014E22905C617380B55D3 /* ChoosePresenter.m */; };
-		B0CAB1C53D93E55682DDB2AD /* MainTextPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED759E95C077196E57AD374 /* MainTextPresenter.m */; };
-		D93097090EC419E63EC7C4BB /* MainTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A428065D3CECDF121C456A01 /* MainTextViewController.m */; };
+		B0CAB1C53D93E55682DDB2AD /* DispalyNewsTextPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED759E95C077196E57AD374 /* DispalyNewsTextPresenter.m */; };
+		D93097090EC419E63EC7C4BB /* DispalyNewsTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A428065D3CECDF121C456A01 /* DispalyNewsTextViewController.m */; };
 		FC2D8E501C4BA65300C375C3 /* NewsDomainModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D8E4F1C4BA65300C375C3 /* NewsDomainModule.m */; };
 		FC8F156D1C496C77003D7225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156C1C496C77003D7225 /* main.m */; };
 		FC8F15701C496C77003D7225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8F156F1C496C77003D7225 /* AppDelegate.m */; };
@@ -31,38 +31,38 @@
 /* Begin PBXFileReference section */
 		0044B69E34181737BB6184F4 /* Pods-TestViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestViper/Pods-TestViper.debug.xcconfig"; sourceTree = "<group>"; };
 		01029516D95C6C1B7EAD899B /* Pods-TestViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestViper/Pods-TestViper.release.xcconfig"; sourceTree = "<group>"; };
-		0EFA23CF67F321D7EB32F05A /* MainTextAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextAssembly.h; sourceTree = "<group>"; };
+		0EFA23CF67F321D7EB32F05A /* DisplayNewsTextAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DisplayNewsTextAssembly.h; sourceTree = "<group>"; };
 		13615BB9E2246A7AADB14D75 /* libPods-TestViper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestViper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		288A14BD7A831C386F23E55C /* ChooseInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractorOutput.h; sourceTree = "<group>"; };
-		2ED759E95C077196E57AD374 /* MainTextPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextPresenter.m; sourceTree = "<group>"; };
+		2ED759E95C077196E57AD374 /* DispalyNewsTextPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DispalyNewsTextPresenter.m; sourceTree = "<group>"; };
 		2FDD7B5A46EFE3C329582D1B /* ChooseInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractor.h; sourceTree = "<group>"; };
-		3B4D11E5F939BE1C5AD103BA /* MainTextPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextPresenter.h; sourceTree = "<group>"; };
-		3F4CCC4DEDB81C2F1C95D17E /* MainTextRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextRouter.h; sourceTree = "<group>"; };
+		3B4D11E5F939BE1C5AD103BA /* DispalyNewsTextPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextPresenter.h; sourceTree = "<group>"; };
+		3F4CCC4DEDB81C2F1C95D17E /* DispalyNewsTextRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextRouter.h; sourceTree = "<group>"; };
 		43F5C53462DBE2F24718A55C /* ChooseRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseRouter.h; sourceTree = "<group>"; };
 		4561D80C0E15DD477E996818 /* ChooseModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseModuleInput.h; sourceTree = "<group>"; };
-		4DC7B354A26C999936AB604F /* MainTextInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractorInput.h; sourceTree = "<group>"; };
+		4DC7B354A26C999936AB604F /* DispalyNewsTextInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextInteractorInput.h; sourceTree = "<group>"; };
 		599810EE9098289A672AED22 /* ChoosePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChoosePresenter.h; sourceTree = "<group>"; };
 		607E1824235B9E6B94FB3561 /* ChooseInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseInteractor.m; sourceTree = "<group>"; };
-		6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextAssembly.m; sourceTree = "<group>"; };
+		6F6F37EA62B2DC5D74F9528B /* DisplayNewsTextAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DisplayNewsTextAssembly.m; sourceTree = "<group>"; };
 		7D03D5FA3551BF4BF302941A /* ChooseAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseAssembly.m; sourceTree = "<group>"; };
 		7FF014E22905C617380B55D3 /* ChoosePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChoosePresenter.m; sourceTree = "<group>"; };
 		80884450AAC11A66DE8E740B /* ChooseViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewOutput.h; sourceTree = "<group>"; };
-		824D6ADA31D78880F10A9658 /* MainTextRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextRouterInput.h; sourceTree = "<group>"; };
+		824D6ADA31D78880F10A9658 /* DispalyNewsTextRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextRouterInput.h; sourceTree = "<group>"; };
 		87B7013455B4DBC12EF0033E /* ChooseAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseAssembly.h; sourceTree = "<group>"; };
 		915713A5A6E297621764386E /* ChooseRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseRouter.m; sourceTree = "<group>"; };
-		92E02C2686642500FB06FD23 /* MainTextRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextRouter.m; sourceTree = "<group>"; };
+		92E02C2686642500FB06FD23 /* DispalyNewsTextRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DispalyNewsTextRouter.m; sourceTree = "<group>"; };
 		938562ECD2495904FCF50241 /* ChooseViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewInput.h; sourceTree = "<group>"; };
 		9F01F7AE24BF2283BF059688 /* ChooseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChooseViewController.m; sourceTree = "<group>"; };
-		A428065D3CECDF121C456A01 /* MainTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextViewController.m; sourceTree = "<group>"; };
-		AA4849459AD98A4923835435 /* MainTextModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextModuleInput.h; sourceTree = "<group>"; };
+		A428065D3CECDF121C456A01 /* DispalyNewsTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DispalyNewsTextViewController.m; sourceTree = "<group>"; };
+		AA4849459AD98A4923835435 /* DispalyNewsTextModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextModuleInput.h; sourceTree = "<group>"; };
 		B0E2CBB79A6CBA6E0E7123B8 /* ChooseInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseInteractorInput.h; sourceTree = "<group>"; };
-		B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTextInteractor.m; sourceTree = "<group>"; };
+		B8399BC95FF528B1B23E5AE9 /* DispalyNewsTextInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DispalyNewsTextInteractor.m; sourceTree = "<group>"; };
 		DCA7BD868164AB9842BEA36F /* ChooseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseViewController.h; sourceTree = "<group>"; };
-		E4CBD4DFA3214EF7B7F38417 /* MainTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewController.h; sourceTree = "<group>"; };
-		E6165BB5835FBC703A34D5E8 /* MainTextInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractorOutput.h; sourceTree = "<group>"; };
-		E871005E391D5EEEC21E267D /* MainTextViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewOutput.h; sourceTree = "<group>"; };
-		EA00661A194020E7F0A86504 /* MainTextInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextInteractor.h; sourceTree = "<group>"; };
-		ECAEACCB585A90EAE4F97FF3 /* MainTextViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTextViewInput.h; sourceTree = "<group>"; };
+		E4CBD4DFA3214EF7B7F38417 /* DispalyNewsTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextViewController.h; sourceTree = "<group>"; };
+		E6165BB5835FBC703A34D5E8 /* DispalyNewsTextInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextInteractorOutput.h; sourceTree = "<group>"; };
+		E871005E391D5EEEC21E267D /* DispalyNewsTextViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextViewOutput.h; sourceTree = "<group>"; };
+		EA00661A194020E7F0A86504 /* DispalyNewsTextInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextInteractor.h; sourceTree = "<group>"; };
+		ECAEACCB585A90EAE4F97FF3 /* DispalyNewsTextViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DispalyNewsTextViewInput.h; sourceTree = "<group>"; };
 		F433B24ED0B20C982429C334 /* ChooseRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChooseRouterInput.h; sourceTree = "<group>"; };
 		FC2D8E4E1C4BA65300C375C3 /* NewsDomainModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDomainModule.h; path = Layers/DomainModels/NewsDomainModule.h; sourceTree = "<group>"; };
 		FC2D8E4F1C4BA65300C375C3 /* NewsDomainModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDomainModule.m; path = Layers/DomainModels/NewsDomainModule.m; sourceTree = "<group>"; };
@@ -96,9 +96,9 @@
 		00FC35257A4A2FBEF070F822 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				AA4849459AD98A4923835435 /* MainTextModuleInput.h */,
-				3B4D11E5F939BE1C5AD103BA /* MainTextPresenter.h */,
-				2ED759E95C077196E57AD374 /* MainTextPresenter.m */,
+				AA4849459AD98A4923835435 /* DispalyNewsTextModuleInput.h */,
+				3B4D11E5F939BE1C5AD103BA /* DispalyNewsTextPresenter.h */,
+				2ED759E95C077196E57AD374 /* DispalyNewsTextPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -106,10 +106,10 @@
 		023519A57A557CCF1F0A239C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				4DC7B354A26C999936AB604F /* MainTextInteractorInput.h */,
-				E6165BB5835FBC703A34D5E8 /* MainTextInteractorOutput.h */,
-				EA00661A194020E7F0A86504 /* MainTextInteractor.h */,
-				B8399BC95FF528B1B23E5AE9 /* MainTextInteractor.m */,
+				4DC7B354A26C999936AB604F /* DispalyNewsTextInteractorInput.h */,
+				E6165BB5835FBC703A34D5E8 /* DispalyNewsTextInteractorOutput.h */,
+				EA00661A194020E7F0A86504 /* DispalyNewsTextInteractor.h */,
+				B8399BC95FF528B1B23E5AE9 /* DispalyNewsTextInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -118,10 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				FC8F15911C49A923003D7225 /* TextView */,
-				ECAEACCB585A90EAE4F97FF3 /* MainTextViewInput.h */,
-				E871005E391D5EEEC21E267D /* MainTextViewOutput.h */,
-				E4CBD4DFA3214EF7B7F38417 /* MainTextViewController.h */,
-				A428065D3CECDF121C456A01 /* MainTextViewController.m */,
+				ECAEACCB585A90EAE4F97FF3 /* DispalyNewsTextViewInput.h */,
+				E871005E391D5EEEC21E267D /* DispalyNewsTextViewOutput.h */,
+				E4CBD4DFA3214EF7B7F38417 /* DispalyNewsTextViewController.h */,
+				A428065D3CECDF121C456A01 /* DispalyNewsTextViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 		73769C78794F39DB04E88F5D /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				824D6ADA31D78880F10A9658 /* MainTextRouterInput.h */,
-				3F4CCC4DEDB81C2F1C95D17E /* MainTextRouter.h */,
-				92E02C2686642500FB06FD23 /* MainTextRouter.m */,
+				824D6ADA31D78880F10A9658 /* DispalyNewsTextRouterInput.h */,
+				3F4CCC4DEDB81C2F1C95D17E /* DispalyNewsTextRouter.h */,
+				92E02C2686642500FB06FD23 /* DispalyNewsTextRouter.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -218,8 +218,8 @@
 		D0991090D905B5C59D01F8D3 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				0EFA23CF67F321D7EB32F05A /* MainTextAssembly.h */,
-				6F6F37EA62B2DC5D74F9528B /* MainTextAssembly.m */,
+				0EFA23CF67F321D7EB32F05A /* DisplayNewsTextAssembly.h */,
+				6F6F37EA62B2DC5D74F9528B /* DisplayNewsTextAssembly.m */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -448,11 +448,11 @@
 				FC2D8E501C4BA65300C375C3 /* NewsDomainModule.m in Sources */,
 				FC8F158D1C498D2F003D7225 /* Mapper.m in Sources */,
 				42465D447E880C8DA04BE042 /* ChooseRouter.m in Sources */,
-				3FBCC1A6F87F4C8C8B1FA17F /* MainTextAssembly.m in Sources */,
-				D93097090EC419E63EC7C4BB /* MainTextViewController.m in Sources */,
-				B0CAB1C53D93E55682DDB2AD /* MainTextPresenter.m in Sources */,
-				0D35F8F7966050152C392DCA /* MainTextInteractor.m in Sources */,
-				0F98797662637A97B9A661EE /* MainTextRouter.m in Sources */,
+				3FBCC1A6F87F4C8C8B1FA17F /* DisplayNewsTextAssembly.m in Sources */,
+				D93097090EC419E63EC7C4BB /* DispalyNewsTextViewController.m in Sources */,
+				B0CAB1C53D93E55682DDB2AD /* DispalyNewsTextPresenter.m in Sources */,
+				0D35F8F7966050152C392DCA /* DispalyNewsTextInteractor.m in Sources */,
+				0F98797662637A97B9A661EE /* DispalyNewsTextRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

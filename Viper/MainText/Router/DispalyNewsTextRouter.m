@@ -6,10 +6,10 @@
 //  Copyright 2016 SergeyC. All rights reserved.
 //
 
-#import "MainTextRouter.h"
+#import "DispalyNewsTextRouter.h"
 #import <HelperFunctions.h>
 
-@implementation MainTextRouter
+@implementation DispalyNewsTextRouter
 
 #pragma mark - MainTextRouterInput
 

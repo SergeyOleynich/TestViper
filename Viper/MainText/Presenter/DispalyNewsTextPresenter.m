@@ -6,15 +6,15 @@
 //  Copyright 2016 SergeyC. All rights reserved.
 //
 
-#import "MainTextPresenter.h"
+#import "DispalyNewsTextPresenter.h"
 
-#import "MainTextViewInput.h"
-#import "MainTextInteractorInput.h"
-#import "MainTextRouterInput.h"
+#import "DispalyNewsTextViewInput.h"
+#import "DispalyNewsTextInteractorInput.h"
+#import "DispalyNewsTextRouterInput.h"
 
 #import <HelperFunctions.h>
 
-@implementation MainTextPresenter
+@implementation DispalyNewsTextPresenter
 
 #pragma mark - Методы MainTextModuleInput
 
